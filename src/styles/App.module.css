@@ -78,7 +78,7 @@
 
 .descDiv {
 	color: black;
-	width: 65vw;
+	max-width: 900px;
 	margin-bottom: 20px;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .modal {
-	width: 550px;
+	max-width: 550px;
 	height: 650px;
 	background: white;
 	color: white;
@@ -225,6 +225,8 @@
 	padding: 5px;
 	border-radius: 5px;
 	margin-bottom: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .modalTitle {
