@@ -5,7 +5,27 @@
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
+
+	/* Horizontal gradient background */
+	background: hsla(39, 100%, 78%, 1);
+	background: linear-gradient(
+		180deg,
+		hsla(39, 100%, 78%, 1) 0%,
+		hsla(148, 43%, 68%, 1) 100%
+	);
+
+	background: -moz-linear-gradient(
+		180deg,
+		hsla(39, 100%, 78%, 1) 0%,
+		hsla(148, 43%, 68%, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		180deg,
+		hsla(39, 100%, 78%, 1) 0%,
+		hsla(148, 43%, 68%, 1) 100%
+	);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFD78E", endColorstr="#8AD0AB", GradientType=1 );
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;

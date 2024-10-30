@@ -1,0 +1,242 @@
+.frontPage {
+	display: flex;
+	flex-direction: column; /* Ensures elements stack vertically */
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding-top: 70px; /* Matches the navbar height */
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+	margin-top: 18px;
+}
+
+.siteTitle {
+	margin: 0px;
+	font-size: 50px;
+	display: inline-block;
+	text-shadow: 1px 0.1px 3px rgb(130, 130, 130);
+}
+
+.siteSubtitle {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 25px;
+	color: black;
+}
+
+.iconsDiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 70px; /* Typical navbar height */
+	padding: 0 20px; /* Padding for left and right spacing */
+	position: fixed; /* Fixes it to the top of the page */
+	top: 0; /* Aligns it to the top */
+	left: 0;
+	right: 0;
+	background-color: rgba(107, 107, 107, 0.5);
+
+	color: white; /* Text color */
+	z-index: 1000; /* Ensures it stays above other elements */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds shadow */
+}
+
+.logoDiv {
+	display: flex;
+}
+
+.navbarTitle {
+	padding-left: 10px;
+	font-size: 30px;
+}
+
+.contactButton {
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	padding: 10px 22px;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+}
+
+.contactButton:hover {
+	background-color: rgba(137, 137, 137, 0.633);
+}
+
+.titleDiv {
+	position: relative;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+
+.descDiv {
+	color: black;
+	width: 900px;
+	margin-bottom: 20px;
+}
+
+.descTitle {
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.examples {
+	background-color: rgb(237, 237, 237);
+	border-radius: 30px;
+	padding: 30px;
+	border-right: 2px solid darkgray;
+	border-bottom: 2px solid darkgray;
+}
+
+.listsDiv {
+	display: flex;
+	gap: 20px; /* Adjust space between the lists */
+}
+
+.leftList,
+.rightList {
+	flex: 1; /* Makes both lists take equal space */
+}
+
+.blurbText {
+	font-size: 20px;
+}
+
+.middleButton {
+	background-color: rgba(157, 157, 157, 0.313);
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	padding: 5px 27px;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+}
+
+.middleButton:hover {
+	background-color: rgba(157, 157, 157, 0.633);
+}
+
+.darkBG {
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.modal {
+	width: 550px;
+	height: 650px;
+	background: white;
+	color: white;
+	z-index: 10;
+	border-radius: 16px;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.submitButton {
+	background-color: rgb(224, 242, 224);
+	border: 2px solid #007108;
+	color: #161616;
+	padding: 10px 22px;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	width: 150px;
+}
+
+.submitButton:hover {
+	background-color: rgb(147, 218, 109);
+	border: 2px solid #69696900;
+	color: #000000;
+	padding: 10px 22px;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+}
+
+.closeButton {
+	background-color: rgb(227, 179, 179);
+	border: 2px solid #fb0000;
+	color: #161616;
+	padding: 10px 22px;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	width: 150px;
+}
+
+.closeButton:hover {
+	background-color: rgb(237, 86, 86);
+	border: 2px solid #69696900;
+	color: #000000;
+	padding: 10px 22px;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+}
+
+.inputField {
+	width: 200px;
+	background-color: white;
+	color: black;
+	padding: 5px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.inputArea {
+	width: 400px;
+	height: 200px;
+	background-color: white;
+	color: black;
+	padding: 5px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.modalTitle {
+	padding-top: 20px;
+	margin-bottom: 0px;
+	font-size: 25px;
+	color: black;
+}
+
+.modalText {
+	color: black;
+	margin-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
