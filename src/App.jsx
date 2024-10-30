@@ -11,7 +11,7 @@ function App() {
 			<div className={styles.iconsDiv}>
 				<div className={styles.logoDiv}>
 					<img src={logo} alt="LeafTech Logo" className={styles.logo} />
-					<p className={styles.navbarTitle}>LetsTalkTech</p>
+					<p className={styles.navbarTitle}>LetsTalkTech NZ</p>
 				</div>
 				<button
 					className={styles.contactButton}
@@ -24,14 +24,14 @@ function App() {
 			<div className={styles.titleDiv}>
 				<p className={styles.siteSubtitle}>LetsTalkTech</p>
 				<p className={styles.siteTitle}>
-					<strong>Local, community support tailored to you</strong>
+					<strong>Kiwi, community support tailored to you</strong>
 				</p>
 			</div>
 
 			<div className={styles.descDiv}>
 				<p className={styles.blurbText}>
-					Locally owned and operated, proud to be a small business rooted in our
-					community. Honest and fair pricing, with no hidden fees.
+					Locally owned and operated in Auckland, proud to be a small business
+					rooted in our community. Honest and fair pricing, with no hidden fees.
 					<br /> <br />
 					Our services range from troubleshooting and repairs to installations
 					and tech consultations, ensuring you receive tailored support for all
