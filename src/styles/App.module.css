@@ -129,12 +129,12 @@
 .darkBG {
 	background-color: rgba(0, 0, 0, 0.2);
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	z-index: 0;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	position: absolute;
+	position: fixed;
 }
 
 .centered {
@@ -146,7 +146,7 @@
 
 .modal {
 	max-width: 550px;
-	height: 650px;
+	height: 690px;
 	background: white;
 	color: white;
 	z-index: 10;
@@ -241,4 +241,26 @@
 	margin-top: 0px;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+@media (max-width: 540px) {
+	.contactButton {
+		display: none;
+	}
+	.inputArea {
+		width: 300px;
+	}
+	.navbarTitle {
+		font-size: 25px;
+	}
+	.iconsDiv {
+		height: 50px;
+	}
+	.logo {
+		height: 50px;
+		width: 50px;
+	}
+	.titleDiv {
+		margin-top: 10px;
+	}
 }

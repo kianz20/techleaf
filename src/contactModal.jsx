@@ -36,6 +36,8 @@ const Modal = ({ setIsOpen }) => {
 					<h1 className={styles.modalTitle}>Contact us</h1>
 					<h4 className={styles.modalText}>
 						Flick us a message and we&apos;ll get back to you as soon as we can.
+						<br />
+						Add your phone number if you&apos;d prefer we give you a call.
 					</h4>
 					<form ref={form} onSubmit={submitContact}>
 						<h3 className={styles.modalText}>Name: </h3>
