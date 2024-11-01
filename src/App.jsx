@@ -1,33 +1,51 @@
 import { useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import logo from "./assets/LTTLogoNoText.png";
 import Modal from "./contactModal";
+import Received from "./Recevied"; // Import your new page component
 import styles from "./styles/App.module.css";
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
-	return (
-		<div className={styles.frontPage}>
-			<div className={styles.iconsDiv}>
-				<div className={styles.logoDiv}>
-					<img src={logo} alt="LeafTech Logo" className={styles.logo} />
-					<p className={styles.navbarTitle}>LetsTalkTech NZ</p>
-				</div>
-				<button
-					className={styles.contactButton}
-					onClick={() => setIsOpen(true)}
-				>
-					Contact a Tech
-				</button>
-			</div>
 
+	return (
+		<Router>
+			<div className={styles.frontPage}>
+				<div className={styles.iconsDiv}>
+					<div className={styles.logoDiv}>
+						<img src={logo} alt="LeafTech Logo" className={styles.logo} />
+						<p className={styles.navbarTitle}>LetsTalkTech NZ</p>
+					</div>
+					<button
+						className={styles.contactButton}
+						onClick={() => setIsOpen(true)}
+					>
+						Contact a Tech
+					</button>
+				</div>
+				<Routes>
+					<Route
+						path="/"
+						element={<HomePage isOpen={isOpen} setIsOpen={setIsOpen} />}
+					/>
+					<Route path="/confirm" element={<Received />} />
+				</Routes>
+			</div>
+		</Router>
+	);
+}
+
+// eslint-disable-next-line react/prop-types
+function HomePage({ isOpen, setIsOpen }) {
+	return (
+		<>
 			<div className={styles.titleDiv}>
 				<p className={styles.siteSubtitle}>LetsTalkTech</p>
 				<p className={styles.siteTitle}>
 					<strong>Kiwi, community support tailored to you</strong>
 				</p>
 			</div>
-
 			<div className={styles.descDiv}>
 				<p className={styles.blurbText}>
 					Locally owned and operated in Auckland, proud to be a small business
@@ -38,15 +56,10 @@ function App() {
 					your tech needs.
 				</p>
 			</div>
-
 			<button className={styles.middleButton} onClick={() => setIsOpen(true)}>
 				<h2>Contact us now!</h2>
 			</button>
-
 			<div className={styles.descDiv}>
-				<p className={styles.blurbText}></p>
-				<br />
-				<br />
 				<div className={styles.examples}>
 					<h3>
 						<strong>Just some examples...</strong>
@@ -64,13 +77,12 @@ function App() {
 							<p>On-Call tech support</p>
 							<p>Computer or Laptop speedup</p>
 							<p>Custom PC builds</p>
-							<p></p>
 						</div>
 					</div>
 				</div>
 			</div>
 			{isOpen && <Modal setIsOpen={setIsOpen} />}
-		</div>
+		</>
 	);
 }
 
